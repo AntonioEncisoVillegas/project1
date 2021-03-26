@@ -1,0 +1,212 @@
+/*-------------------------Global-----------------------------------*/
+:root{
+    --primary:rgb(0, 0, 0);
+    --text:rgb(87, 35, 35);
+    
+}
+*{
+    margin:0%;
+}
+body{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: 'bebas', sans-serif;
+
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top:1rem;
+}
+h2,h3{
+    margin:1 rem;
+    text-align: center;
+}
+h2{
+    margin:0rem;
+    font-size: 3rem;
+    color: rgb(138, 138, 29);
+}
+h3{
+    font-size: 1.5rem;
+}
+
+/*-------------------------Utilities-------------------------------*/
+.site-header{
+background-image:url(backgro.jpeg);
+background-position: center,center;
+background-size:cover;
+color: rgb(238, 238, 238);
+text-align: center;
+height: 42vh;
+}
+.site-header img{
+width:10rem ;
+height: 10rem;
+border-radius: 100%;
+border: 15px solid rgba(3, 58, 121, 0.603);
+border-bottom: black;
+padding :3px;
+opacity:none;
+}
+
+.site-header p{
+
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.site-header h1{
+   padding-top: 2.5;
+   font: size  2rem;   
+}
+
+.container{
+  width: 80%;  
+  margin-right: auto;
+  margin-left: auto;
+  }
+  /*-----------------------------------menu -----------------*/
+  nav.menu{
+      background-color: var(--primary);
+      text-align: center ;
+  }
+  nav.menu a{
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      padding: 1rem;
+      margin-right: 3rem;
+}
+@media(max-width:768px){
+    nav.menu a{
+        display: block;
+    }
+}
+nav.menu a:hover{
+    font-size: 1.4rem;
+    color:var(--text);
+    font-weight: bold;
+}
+
+/* ----------------------service-----------------------------*/
+.services-container{
+    display:flex;
+}
+@media(max-width:768px){
+    .services-container{
+        display:block;
+    }
+}
+.service{
+    background-color: #dedede;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+
+  /*------------------ ICONS----------------------------------*/
+.icons{
+    text-align: center;
+    font-size: 2rem;
+}
+  .fa-css3-alt{
+    font-size: 2rem;
+    color: rgba(10, 18, 43, 0.603);
+}
+  .fa-html5{
+
+    font-size: 2rem;
+    color: rgb(255, 81, 0);
+}
+.fa-js-square{
+    font-size: 2rem;
+    color: rgba(13, 19, 37, 0.651);
+}
+.fa-python
+{
+    font-size: 2rem;
+    color: orange;
+}
+.fa-map-marker-alt
+{
+    color: rgb(39, 66, 187);
+    image-orientation: 1deg;
+}
+.footer-site{
+    background-color: var( --primary);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    
+}
+/*projects*/
+html,main{
+    margin: auto;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 100%;  
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+}
+.container1{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+}
+.container1 .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.container1 .card:hover{
+    transform: translate(15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+
+}
+.container1 .card img{
+    width: 330px;
+    height: 220px;
+}
+.container1 .card h4{
+font-weight: 600;
+}
+.container1 .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container1 .card a{
+font-weight: 500;
+text-decoration: none;
+color: #3498db;
+}
+
+
+.contact{
+    font-size: 1.5rem;
+    text-align: center;
+}
